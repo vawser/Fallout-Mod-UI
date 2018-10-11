@@ -1,0 +1,788 @@
+guiTypes = {
+	windowType = {
+		name = "topbar"
+		backGround = ""
+		position = { x = 0 y = -1 }	
+		size = { x = 2048 y = 200 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		verticalBorder = ""
+		fullScreen = yes
+
+		show_position = { x = 0 y = -1 }
+		hide_position = { x = 0 y = -165 }
+		animation_type = "decelerated"
+		animation_time = 600	
+
+        # Unused
+		iconType = {
+			name = "brown_bg"
+			spriteType ="GFX_brown_bg"
+			position = { x= 99512 y = 20 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="topbar_1"
+			spriteType = "GFX_remove"
+			position = { x= 99512 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="topbar_2"
+			spriteType = "GFX_remove"
+			position = { x= 991024 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="topbar_3"
+			spriteType = "GFX_remove"
+			position = { x= 991532 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+        iconType = {
+			name = "great_power_button_base"
+			quadTextureSprite ="GFX_great_power_button_base"
+			position = { x= 91 y = -9999 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}		
+        iconType = {
+			name = "player_shield_glow"
+			quadTextureSprite ="GFX_shield_fancy_great_power_glow"
+			position = { x= -5 y = -9999 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+        iconType = {
+			name ="topbar_upper_left_bg2"
+			spriteType = "GFX_topbar_portrait_value_bg"
+			position = { x= 731 y = -9999 }
+			Orientation = "UPPER_LEFT"
+		}
+        iconType = {
+			name = "button_base"
+			spriteType ="GFX_age_frame_addon"
+			position = { x= 690 y = -9999 }
+			alwaystransparent = yes
+		}			
+		guiButtonType = {
+			name = "age_icon"
+			spriteType ="GFX_icon_age_s"
+			position = { x= 705 y = -9999 }
+			frame = 1
+		}	
+		instantTextBoxType = {
+			name = "age_title"
+			position = { x = 740 y = -9999 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "AgeText"	
+			maxWidth = 160
+			maxHeight = 32
+			format = left
+			alwaystransparent = yes
+		}	
+        iconType = {
+			name ="topbar_upper_left_bg"
+			spriteType = "GFX_fallout_background_750_150"
+			position = { x= -10 y = -9999 }
+			Orientation = "UPPER_LEFT"
+		}
+        iconType = {
+			name ="topbar_upper_left_bg4"
+			spriteType = "GFX_button_400"
+			position = { x= 120 y = -9999 }
+			Orientation = "UPPER_LEFT"
+		}
+        
+        # Topbar backgrounds
+        iconType = {
+			name ="topbar_main_bg"
+			spriteType = "GFX_fallout_background_750_150"
+			position = { x= -158 y = -10 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="topbar_name_bg"
+			spriteType = "GFX_button_400"
+			position = { x= 130 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+        
+        iconType = {
+			name = "government_reforms_button_base"
+			quadTextureSprite ="GFX_government_reforms_button_base"
+			position = { x= 93 y = -9999 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+        iconType = {
+			name = "government_reforms_progress"
+			position = { x = 100 y = -9999 }
+			quadTextureSprite ="GFX_government_reforms_progress"
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		guiButtonType = {
+			name = "government_reforms_button"
+			position = { x = 100 y = -9999 }
+			quadTextureSprite ="GFX_government_reforms_button"
+			buttonFont = "Main_14_black"
+			clicksound = macro_build
+		}
+        
+        # Topbar elements
+		guiButtonType = {
+			name = "player_shield"
+			quadTextureSprite ="GFX_mega_flag"
+			position = { x= -5 y = -5 }
+			Orientation = "UPPER_LEFT"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			shortcut = "F1"
+		}
+        instantTextBoxType = {
+			name = "PlayerNationText"
+			position = { x = 145 y = 8 }
+			textureFile = ""
+			font = "monofonto_outline_18"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 340
+			maxHeight = 32
+			fixedsize = yes
+		}
+        
+        # Buttons
+		guiButtonType = {
+			name = "open_build_interface_button"
+			position = { x = 540 y = 10 }
+			quadTextureSprite ="GFX_topbar_build_button"
+			clicksound = macro_build
+			hint_tag = "hint_macrobuild"
+			shortcut = "b"
+		}
+		guiButtonType = {
+			name = "great_power_button"
+			position = { x = 540 y = 50 }
+			quadTextureSprite ="GFX_topbar_great_power_button"
+		}
+        guiButtonType = {
+			name = "current_age_button"
+			position = { x = 540 y = 90 }
+			quadTextureSprite ="GFX_topbar_age_button"
+			clicksound = macro_build
+		}
+        
+        iconType = {
+			name ="entry_bg_1"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 160 y = 45 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_2"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 160 y = 65 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_3"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 160 y = 85 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_4"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 160 y = 105 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_5"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 260 y = 45 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_6"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 260 y = 65 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_7"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 260 y = 85 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_8"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 260 y = 105 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        
+        iconType = {
+			name ="entry_bg_9"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 360 y = 45 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_10"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 360 y = 65 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_11"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 360 y = 85 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_12"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 360 y = 105 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        
+        iconType = {
+			name ="entry_bg_13"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 460 y = 45 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_14"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 460 y = 75 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        iconType = {
+			name ="entry_bg_15"
+			spriteType = "GFX_fallout_background_200_64"
+			position = { x= 460 y = 105 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.3
+		}
+        
+        # 15
+        
+        @entry_icon_x = 7
+        @entry_x = 42
+        
+        @col_1_icon_x = 132
+        @col_1_text_x = 160
+        @col_2_icon_x = 232
+        @col_2_text_x = 260
+        @col_3_icon_x = 332
+        @col_3_text_x = 360
+        @col_4_icon_x = 432
+        @col_4_text_x = 460
+        
+        iconType = {
+			name ="icon_gold"
+			spriteType = "GFX_icon_gold_strip"
+			position = { x= @col_1_icon_x y = 45 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_ducats"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_gold"
+			position = { x= @col_1_text_x y = 43 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_manpower"
+			spriteType = "GFX_icon_manpower"
+			position = { x= @col_1_icon_x y = 65 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_manpower"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_manpower"
+			position = { x = @col_1_text_x y = 63 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_sailors"
+			spriteType = "GFX_icon_sailors"
+			position = { x= @col_1_icon_x y = 87 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_sailors"
+			position = { x = @col_1_text_x y = 83 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_stability"
+			spriteType = "GFX_icon_stability"
+			position = { x= @col_1_icon_x y = 105 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_stability"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_stability"
+			position = { x = @col_1_text_x y = 103 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+        iconType = {
+			name ="icon_corruption"
+			spriteType = "GFX_icon_corruption_small"
+			position = { x= @col_2_icon_x y = 45 }
+			Orientation = "UPPER_LEFT"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_corruption"
+			position = { x = @col_2_text_x y = 43 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_prestige"
+			spriteType = "GFX_icon_prestige"
+			position = { x= @col_2_icon_x y = 65 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_prestige"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_prestige"
+			position = { x = @col_2_text_x y = 64 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+        
+        @legitimacy_icon_y = 87
+        @legitimacy_text_y = 83
+        
+		iconType = {
+			name ="icon_dev"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= @col_2_icon_x y = @legitimacy_icon_y }
+			Orientation = "UPPER_LEFT"
+			frame = 3
+			hint_tag = "hint_legitimacy"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_dev"
+			position = { x = @col_2_text_x y = @legitimacy_text_y }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_meritocracy"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= @col_2_icon_x y = @legitimacy_icon_y }
+			Orientation = "UPPER_LEFT"
+			frame = 5
+			hint_tag = "hint_meritocracy"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_meritocracy"
+			position = { x = @col_2_text_x y = @legitimacy_text_y }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_leg"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= @col_2_icon_x y = @legitimacy_icon_y }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+			hint_tag = "hint_legitimacy"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_leg"
+			position = { x = @col_2_text_x y = @legitimacy_text_y }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_rep"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= @col_2_icon_x y = @legitimacy_icon_y }
+			Orientation = "UPPER_LEFT"
+			frame = 2
+			hint_tag = "hint_republican"
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_rep"
+			position = { x = @col_2_text_x y = @legitimacy_text_y }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		iconType = {
+			name ="icon_unity"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= @col_2_icon_x y = @legitimacy_icon_y }
+			Orientation = "UPPER_LEFT"
+			frame = 4
+            scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "text_unity"
+			position = { x = @col_2_text_x y = @legitimacy_text_y }
+			textureFile = ""
+			font = "monofonto_outline_12"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		windowType = {
+			name = "powerprojection_topbar"
+			backGround=""
+			position = { x = 0 y = 0 }	
+			size = { x=100 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+
+            iconType = {
+                name ="topbar_liberty_overlay"
+                spriteType = "GFX_topbar_liberty_overlay"
+                position = { x= 491 y = -9999 }
+                Orientation = "UPPER_LEFT"
+            }	
+
+            iconType = {
+                name ="icon_powerprojection"
+				spriteType = "GFX_icon_powerprojection"
+				position = { x= 238 y = 106 }
+				Orientation = "UPPER_LEFT"
+				hint_tag = "hint_powerprojection"
+                scale = 0.8
+			}					
+
+			instantTextBoxType = {
+				name = "text_powerprojection"
+				position = { x = @col_2_text_x y = 103 }
+                textureFile = ""
+                font = "monofonto_outline_12"
+                borderSize = {x = 4 y = 4}
+                text = "100"	
+                maxWidth = 72
+                maxHeight = 32	
+                format = left
+			}			
+		}
+		
+		windowType = {
+			name = "liberty_desire_topbar"
+			backGround=""
+			position = { x = 0 y = 0 }	
+			size = { x=100 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+
+            iconType = {
+				name ="topbar_liberty_overlay"
+				spriteType = "GFX_topbar_liberty_overlay"
+				position = { x= 491 y = -99999 }
+				Orientation = "UPPER_LEFT"
+			}	
+
+			iconType = {
+				name ="topbar_liberty_icon"
+				spriteType = "GFX_liberty_icon"
+				position = { x= 238 y = 106 }
+				Orientation = "UPPER_LEFT"
+                scale = 0.8
+			}					
+
+			instantTextBoxType = {
+				name = "topbar_liberty_value"
+				position = { x = @col_2_text_x y = 103 }
+                textureFile = ""
+                font = "monofonto_outline_12"
+                borderSize = {x = 4 y = 4}
+                text = "100"	
+                maxWidth = 72
+                maxHeight = 32	
+                format = left
+			}		
+		}
+        
+        iconType = {
+			name ="icon_ADM"
+			spriteType = "GFX_icon_powers_administrative"
+			position = { x= 428 y = 40 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_adm"
+		}
+        iconType = {
+			name ="icon_DIP"
+			spriteType = "GFX_icon_powers_diplomatic"
+			position = { x= 428 y = 70 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_dip"
+		}
+        iconType = {
+			name = "icon_MIL"
+			spriteType ="GFX_icon_powers_military"
+			position = { x= 428 y = 100 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_mil"
+		}	
+        
+        instantTextBoxType = {
+			name = "text_ADM"
+			position = { x = @col_4_text_x y = 43 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+            borderSize = {x = 4 y = 4}
+            text = ""	
+            maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}	
+		instantTextBoxType = {
+			name = "text_DIP"
+			position = { x = @col_4_text_x y = 73 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+            borderSize = {x = 4 y = 4}
+            text = ""	
+            maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+		instantTextBoxType = {
+			name = "text_MIL"
+			position = { x = @col_4_text_x y = 103 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+            borderSize = {x = 4 y = 4}
+            text = ""	
+            maxWidth = 72
+			maxHeight = 32	
+			format = left
+		}
+
+		guiButtonType = {
+			name ="icon_merchant"
+			quadTextureSprite = "GFX_icon_merchant"
+			position = { x= @col_3_icon_x y = 45 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_merchant"
+            scale = 0.6
+		}
+		guiButtonType = {
+			name ="icon_settler"
+			quadTextureSprite = "GFX_icon_settler"
+			position = { x= @col_3_icon_x y = 67 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_colonist"
+            scale = 0.6
+		}
+		guiButtonType = {
+			name ="icon_diplomat"
+			quadTextureSprite = "GFX_icon_diplomat"
+			position = { x= @col_3_icon_x y = 87 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_diplomat"
+            scale = 0.6
+		}
+		guiButtonType = {
+			name ="icon_missionary"
+			quadTextureSprite = "GFX_icon_missionary"
+			position = { x= @col_3_icon_x y = 107 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_missionary"
+            scale = 0.6
+		}
+		instantTextBoxType = {
+			name = "text_merchants"
+			position = { x = @col_3_text_x y = 43 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+            borderSize = {x = 4 y = 4}
+            text = ""	
+            maxWidth = 72
+			maxHeight = 32	
+			format = left	
+		}
+		instantTextBoxType = {
+			name = "text_settlers"
+			position = { x = @col_3_text_x y = 63 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+            borderSize = {x = 4 y = 4}
+            text = ""	
+            maxWidth = 72
+			maxHeight = 32	
+			format = left		
+		}
+		instantTextBoxType = {
+			name = "text_diplomats"
+			position = { x = @col_3_text_x y = 83 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+            borderSize = {x = 4 y = 4}
+            text = ""	
+            maxWidth = 72
+			maxHeight = 32	
+			format = left			
+		}
+		instantTextBoxType = {
+			name = "text_missionaries"
+			position = { x = @col_3_text_x y = 103 }
+			textureFile = ""
+			font = "monofonto_outline_12"
+            borderSize = {x = 4 y = 4}
+            text = ""	
+            maxWidth = 72
+			maxHeight = 32	
+			format = left	
+		}
+
+        # Pause status
+		windowType = {
+			name = "pause_window"
+			backGround=""
+            if_resolution = {
+                max_height = 867
+                position = { x=320 y= 110 }	
+            }
+            if_resolution = {
+                min_height = 868
+                position = { x=-50 y= 20 }	
+            }
+            
+			size = { x=406 y=70 }
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			moveable = 0
+			Orientation = "CENTER_UP"
+			
+			iconType ={
+				name ="pause_banner"
+				spriteType = "GFX_fallout_background_100_64"
+				position = { x = 15 y = -14 }
+				Orientation = "UPPER_LEFT"
+			}	
+			
+			instantTextBoxType = {
+				name = "pause_banner_text"
+				position = { x = 0 y = 2 }
+				textureFile = ""
+				font = "monofonto_outline_18"
+				borderSize = {x = 4 y = 4}
+				text = "CORE_PAUSED"	
+				maxWidth = 120
+				maxHeight = 32
+				format = center
+			}
+		}
+	}
+	
+	windowType = {
+		name = "alerts_parent"
+		backGround=""
+		position = { x=0 y=-1 }	
+		size = { x=2048 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+		show_position = { x = 0 y = -1 }
+		hide_position = { x = 0 y = -165 }
+		animation_type = "decelerated"
+		animation_time = 600	
+	}
+}
